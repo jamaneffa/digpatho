@@ -1,0 +1,98 @@
+.navbar {
+  width: 100%;
+  background-color: var(--navbar-background);
+  border-bottom: 1px solid var(--navbar-border-color);
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.loginLink {
+  font-family: 'THICCCBOI', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  line-height: 20px;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.loginLink:hover {
+  background-color: var(--button-hover-color);
+}
+
+.themeToggle {
+  font-family: 'THICCCBOI', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.themeToggle:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .navLinks {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .loginLink {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+
+  .themeToggle {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navLinks {
+    padding: 5px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .loginLink {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .themeToggle {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

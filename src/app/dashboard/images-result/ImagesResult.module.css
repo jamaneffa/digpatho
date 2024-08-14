@@ -1,0 +1,93 @@
+.container {
+  background-color: var(--border-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px var(--shadow-color);
+  max-width: 700px;
+  margin: 40px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.title {
+  text-align: center;
+  color: var(--main-color);
+}
+
+.imageItem {
+  max-width: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.imageItem:hover {
+  transform: scale(1.05);
+}
+
+.resultImage {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+.infoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin: 10px 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.infoContainer label {
+  font-weight: 600;
+  color: var(--main-color);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.infoContainer input {
+  width: 70%;
+  padding: 8px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--input-background);
+  color: black;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoContainer input:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 10px rgba(128, 78, 225, 0.2);
+}
+
+.resetButton {
+
+  margin: 25px auto;
+  display: block;
+  width: fit-content;
+  font-family: 'THICCCBOI', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resetButton:hover {
+  background-color: var(--button-hover-color);
+}

@@ -1,0 +1,69 @@
+:root {
+  --main-color: #804EE1;
+  --hover-color: #5B3DB3;
+
+  --button-color: #4BC4A0;
+  --button-hover-color: #3A8E75;
+
+  --download-button-color: #4BC4A0;
+  --download-button-hover-color: #3A8E75;
+
+  --delete-button-color: #d32f2f;
+  --delete-button-hover-color: #c62828;
+
+  --background-color: #F5F5F5;
+  --navbar-background: #eeeeee;
+  --navbar-border-color: #E0E0E0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --text-hover-color: #5B3DB3;
+  --border-color: #CCC;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --placeholder-color: #999;
+  --input-background: #F9F9F9;
+  --error-message-color: var(--main-color);
+}
+
+
+[data-theme="dark"] {
+  --main-color: #FFFFFF; 
+  --hover-color: #E0E0E0; 
+  
+  --button-color: #3A4F7A; 
+  --button-hover-color: #2A3B5A; 
+
+  --download-button-color: #3A4F7A;
+  --download-button-hover-color: #2A3B5A;
+
+  --delete-button-color: #C75C5C; 
+  --delete-button-hover-color: #A64848; 
+
+  --background-color: #474747; 
+  --navbar-background: #313030; 
+  --navbar-border-color: #2A2A2A; 
+  --shadow-color: rgba(61, 60, 60, 0.7); 
+  
+  --text-hover-color: #FFFFFF; 
+  --border-color: #3C3C3C; 
+  --overlay-color: rgba(0, 0, 0, 0.7); 
+  --placeholder-color: #AAAAAA; 
+  --input-background: #9b9b9b; 
+  --error-message-color: #FF6B6B; 
+
+  --navbar-link-color: #FFFFFF; 
+  --navbar-link-hover-color: #E0E0E0; 
+}
+
+body {
+  font-family: 'THICCCBOI', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
